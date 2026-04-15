@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import { ShoppingCart, Mail, Database, Workflow, Target, Zap, HeadphonesIcon } from 'lucide-react';
 
 export default function IntegrationsSection() {
