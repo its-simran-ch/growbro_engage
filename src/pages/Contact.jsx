@@ -41,8 +41,8 @@ export default function Contact() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#00E58C]/10 text-black border-2 border-black rounded-full text-sm font-black mb-6 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
              We're here to help
           </div>
-          <h1 className="text-5xl md:text-6xl font-black text-black mb-6 tracking-tight">
-            Let's <span className="text-primary">Grow</span> Together 🚀
+          <h1 className="text-4xl md:text-6xl font-black text-black mb-6 tracking-tight">
+            Let's <span className="text-primary italic">Grow</span> Together 🚀
           </h1>
           <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto">
             Whether you need technical support, sales inquiries, or just want to say hi — our team is ready to connect.
@@ -55,7 +55,7 @@ export default function Contact() {
         {/* 4 Contact Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
           {contactMethods.map((item, idx) => (
-            <div key={idx} className="bg-white rounded-2xl p-6 border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] transition-all group flex flex-col">
+            <div key={idx} className="bg-white rounded-2xl p-6 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] transition-all group flex flex-col">
               <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6 bg-[#00E58C] border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
                 {item.icon}
               </div>
@@ -69,7 +69,7 @@ export default function Contact() {
         </div>
 
         {/* Contact Form Section */}
-        <div className="bg-white rounded-[2rem] border-2 border-black shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] overflow-hidden flex flex-col lg:flex-row">
+        <div className="bg-white rounded-[1.5rem] md:rounded-[2rem] border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] overflow-hidden flex flex-col lg:flex-row">
           
           {/* Left Side: Info & Trust */}
           <div className="bg-bg-dark text-white p-10 lg:p-16 lg:w-2/5 flex flex-col justify-between relative overflow-hidden">

@@ -18,9 +18,9 @@ export default function HeroSection() {
               The #1 AI WhatsApp Business Platform
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-text-dark leading-[1.1] mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-text-dark leading-[1.1] mb-6">
               Modernizing <br />
-              <span className="text-primary">AI Chatbots</span> <br />
+              <span className="text-primary italic">AI Chatbots</span> <br />
               for websites
             </h1>
             
@@ -94,8 +94,8 @@ export default function HeroSection() {
               </div>
             </div>
             
-            {/* Wati style floating metric card */}
-            <div className="absolute -left-12 top-1/2 bg-white px-4 py-3 rounded-xl shadow-xl border border-border-light flex items-center gap-3 animate-bounce" style={{animationDuration: '3s'}}>
+            {/* Floating metric card - hidden on small mobiles to avoid overflow, shown from md up */}
+            <div className="hidden md:flex absolute -left-12 top-1/2 bg-white px-4 py-3 rounded-xl shadow-xl border border-border-light items-center gap-3 animate-bounce" style={{animationDuration: '3s'}}>
               <div className="bg-bg-mint text-primary p-2 rounded-lg font-bold text-xl">3X</div>
               <div className="text-sm font-medium text-text-dark leading-tight">Faster<br/>Responses</div>
             </div>

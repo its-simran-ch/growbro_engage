@@ -51,14 +51,34 @@ export default function IntegrationsSection() {
     <section className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-2xl mx-auto mb-20">
-           <h2 className="text-4xl font-bold text-text-dark mb-4">Connects with your entire stack</h2>
-           <p className="text-lg text-text-light">
+        <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">
+           <h2 className="text-3xl md:text-4xl font-black text-black mb-4 italic">Connects with your <span className="text-primary italic">entire stack</span></h2>
+           <p className="text-lg text-gray-600 font-bold">
              Growbro Engage integrates natively with the tools your team already uses. No engineering required.
            </p>
         </div>
 
-        <div ref={containerRef} className="relative max-w-3xl mx-auto h-[400px] flex items-center justify-center">
+        {/* Mobile Grid View (Hidden on Tablet/Desktop) */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:hidden px-4">
+           {integrations.map((item, idx) => (
+             <div
+               key={idx}
+               className="bg-white rounded-2xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-black flex flex-col items-center justify-center py-6 gap-3 active:scale-95 transition-all"
+             >
+                <div className={`p-3 rounded-xl border border-black ${item.color}`}>
+                  {item.icon}
+                </div>
+                <span className="text-[10px] font-black text-black uppercase tracking-wider">{item.name}</span>
+             </div>
+           ))}
+           <div className="bg-primary rounded-2xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-black flex flex-col items-center justify-center py-6 gap-3">
+              <Zap size={24} className="text-black" />
+              <span className="text-[10px] font-black text-black uppercase tracking-wider">50+ More</span>
+           </div>
+        </div>
+
+        {/* Desktop Orbiting Layout (Hidden on Mobile) */}
+        <div ref={containerRef} className="hidden md:flex relative max-w-3xl mx-auto h-[400px] items-center justify-center">
            
            {/* Dynamic Connecting Lines */}
            <svg className="absolute inset-0 w-full h-full pointer-events-none z-0" style={{ overflow: 'visible' }}>
@@ -77,7 +97,7 @@ export default function IntegrationsSection() {
            </svg>
 
            {/* Center Node (Growbro Engage) */}
-           <div ref={centerRef} className="relative z-20 w-28 h-28 bg-white rounded-full shadow-lg border-2 border-gray-100 flex items-center justify-center">
+           <div ref={centerRef} className="relative z-20 w-28 h-28 bg-white rounded-full shadow-lg border-2 border-black flex items-center justify-center">
               <img src="/growbro-logo.jpeg" alt="Growbro Engage" className="w-16 h-16 rounded-xl object-contain" />
            </div>
 
@@ -98,9 +118,9 @@ export default function IntegrationsSection() {
         </div>
 
         <div className="text-center mt-12">
-           <button className="text-primary font-semibold hover:text-primary-dark transition-colors inline-flex items-center gap-1">
-             Explore all 50+ integrations &rarr;
-           </button>
+           <Link to="/contact" className="text-black font-black hover:text-primary transition-colors inline-flex items-center gap-2 group italic">
+             Explore all 50+ integrations <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+           </Link>
         </div>
       </div>
     </section>

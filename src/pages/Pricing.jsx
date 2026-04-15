@@ -33,8 +33,8 @@ export default function Pricing() {
       
       {/* Pricing Hero */}
       <section className="pt-24 pb-12 bg-white text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-bold text-text-dark mb-6">Get great features at a price that makes sense</h1>
-        <p className="text-xl text-text-light max-w-2xl mx-auto mb-10">Start with a 14-day free trial. No credit card required.</p>
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-text-dark mb-6 leading-tight">Get great features at a price that makes sense</h1>
+        <p className="text-lg md:text-xl text-text-light max-w-2xl mx-auto mb-10 font-bold">Start with a 14-day free trial. No credit card required.</p>
         
         {/* Toggle */}
         <div className="inline-flex items-center gap-4 bg-gray-50 p-2 rounded-full border border-border-light relative z-10 transition-colors">
@@ -62,7 +62,7 @@ export default function Pricing() {
          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             {/* Growth Tier */}
-            <div className="bg-white rounded-[2rem] p-8 border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform flex flex-col">
+            <div className="bg-white rounded-[2rem] p-6 md:p-8 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform flex flex-col">
                <h3 className="text-2xl font-black text-text-dark mb-2">Growth</h3>
                <p className="text-gray-600 font-medium text-sm mb-6 h-10">Perfect for small teams getting started with AI support.</p>
                <div className="mb-8">
@@ -84,7 +84,7 @@ export default function Pricing() {
             </div>
 
             {/* Pro Tier (Highlighted) */}
-            <div className="bg-white rounded-[2rem] p-8 border-2 border-black shadow-[8px_8px_0px_0px_#00E676] transform md:-translate-y-4 hover:-translate-y-5 transition-transform flex flex-col relative">
+            <div className="bg-white rounded-[2rem] p-6 md:p-8 border-2 border-black shadow-[4px_4px_0px_0px_#00E676] md:shadow-[8px_8px_0px_0px_#00E676] transform md:-translate-y-4 hover:-translate-y-5 transition-transform flex flex-col relative mt-8 md:mt-0">
                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#00E676] text-black border-2 border-black px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-widest shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                  Most Popular
                </div>
@@ -114,7 +114,7 @@ export default function Pricing() {
             </div>
 
             {/* Enterprise Tier */}
-            <div className="bg-white rounded-[2rem] p-8 border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform flex flex-col">
+            <div className="bg-white rounded-[2rem] p-6 md:p-8 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform flex flex-col mt-4 md:mt-0">
                <h3 className="text-2xl font-black text-text-dark mb-2">Enterprise</h3>
                <p className="text-gray-600 font-medium text-sm mb-6 h-10">Custom volumes and dedicated support.</p>
                <div className="mb-8 mt-2">
@@ -150,7 +150,7 @@ export default function Pricing() {
 
       {/* FAQ Accordion */}
       <section className="max-w-3xl mx-auto px-4 w-full">
-         <h2 className="text-4xl font-bold text-center text-text-dark mb-12">Frequently Asked Questions.</h2>
+         <h2 className="text-3xl md:text-4xl font-black text-center text-text-dark mb-12 italic">Frequently Asked <span className="text-primary">Questions</span></h2>
          <div className="space-y-4">
             {faqs.map((faq, idx) => (
               <div 

@@ -12,7 +12,7 @@ export default function ChatbotHero() {
               <Bot size={16} />
               No-Code AI Bot Builder
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-black tracking-tight leading-tight mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-black tracking-tight leading-tight mb-6">
               Build <span className="text-primary italic">Human-Like</span> AI Bots in Minutes
             </h1>
             <p className="text-xl text-gray-600 font-medium mb-10 max-w-2xl mx-auto lg:mx-0">
@@ -30,7 +30,7 @@ export default function ChatbotHero() {
 
           {/* Right Graphic */}
           <div className="flex-1 relative w-full max-w-lg mx-auto">
-            <div className="bg-white border-4 border-black rounded-[2.5rem] p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
+            <div className="bg-white border-4 border-black rounded-[2.5rem] p-6 md:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
               <div className="space-y-6">
                 {/* Visual of bot builder */}
                 <div className="bg-gray-50 border-2 border-black rounded-2xl p-4">

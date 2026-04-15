@@ -106,13 +106,35 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-border-light absolute w-full px-4 pt-2 pb-6 space-y-4 shadow-xl">
-          <Link to="/" className="block text-text-dark font-medium pb-4 border-b border-border-light">Home</Link>
-          <Link to="/pricing" className="block text-text-dark font-medium pb-4 border-b border-border-light">Pricing</Link>
-          <Link to="/contact" className="block text-text-dark font-medium pb-4 border-b border-border-light">Contact</Link>
+        <div className="md:hidden bg-white border-b border-border-light absolute w-full px-4 pt-2 pb-6 space-y-4 shadow-xl z-50 max-h-[calc(100vh-80px)] overflow-y-auto">
+          <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="block text-text-dark font-black pb-4 border-b border-border-light">Home</Link>
+          
+          {/* Solutions Mobile */}
+          <div className="space-y-4 pb-4 border-b border-border-light">
+             <div className="text-xs font-black text-text-light uppercase tracking-widest">Solutions</div>
+             <div className="grid grid-cols-1 gap-3 pl-2">
+                <Link to="/solutions/marketing" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-text-dark font-bold"><Zap size={16} className="text-primary"/> Marketing</Link>
+                <Link to="/solutions/support" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-text-dark font-bold"><Users size={16} className="text-primary"/> Support</Link>
+                <Link to="/solutions/elearning" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-text-dark font-bold"><BookOpen size={16} className="text-primary"/> eLearning</Link>
+                <Link to="/solutions/ecommerce" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-text-dark font-bold"><ShoppingCart size={16} className="text-primary"/> E-commerce</Link>
+             </div>
+          </div>
+
+          {/* Product Mobile */}
+          <div className="space-y-4 pb-4 border-b border-border-light">
+             <div className="text-xs font-black text-text-light uppercase tracking-widest">Product</div>
+             <div className="grid grid-cols-1 gap-3 pl-2">
+                <Link to="/product/ai-chatbots" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-text-dark font-bold"><Bot size={16} className="text-primary"/> AI Chatbots</Link>
+                <Link to="/product/whatsapp-api" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-text-dark font-bold"><PhoneCall size={16} className="text-primary"/> WhatsApp API</Link>
+             </div>
+          </div>
+
+          <Link to="/pricing" onClick={() => setIsMobileMenuOpen(false)} className="block text-text-dark font-black pb-4 border-b border-border-light">Pricing</Link>
+          <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="block text-text-dark font-black pb-4 border-b border-border-light">Contact</Link>
+          
           <div className="pt-4 flex flex-col gap-3">
-            <Link to="/login" className="text-center font-medium border border-border-light px-6 py-2 rounded-lg text-text-dark">Sign In</Link>
-            <Link to="/login" className="text-center bg-primary text-white font-medium px-6 py-2 rounded-lg">Start for Free</Link>
+            <Link to="/login" className="text-center font-black border-2 border-black px-6 py-3 rounded-full text-text-dark shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">Sign In</Link>
+            <Link to="/login" className="text-center bg-[#00E58C] text-black border-2 border-black font-black px-6 py-3 rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">Start for Free</Link>
           </div>
         </div>
       )}

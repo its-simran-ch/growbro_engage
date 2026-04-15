@@ -12,7 +12,7 @@ export default function ELearningHero() {
                    <GraduationCap size={16} />
                    Growbro Engage for eLearning
                 </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-text-dark tracking-tight leading-tight mb-6">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-black tracking-tight leading-tight mb-6">
                    Scale your <span className="text-primary italic">EdTech growth</span> with WhatsApp automation
                 </h1>
                 <p className="text-xl text-text-light mb-10 max-w-2xl mx-auto lg:mx-0">
