@@ -1,4 +1,4 @@
-# 🟢 Growbro Engage - Premium WhatsApp SaaS Platform
+# Growbro Engage - Premium WhatsApp SaaS Platform
 
 Growbro Engage is a modern, high-performance SaaS landing page designed for businesses looking to scale their customer engagement, sales, and support using the **WhatsApp Business API**. 
 
@@ -6,22 +6,22 @@ Built with a **Neo-Brutalist** design aesthetic, this platform is optimized for 
 
 ---
 
-## 🚀 Vision
+## Vision
 The goal of this project is to provide a world-class landing page for a WhatsApp Business solution, inspired by industry leaders like Wati.io, but with a unique, vibrant, and highly-mobile-optimized user interface.
 
-## ✨ Key Features
+## Key Features
 
-- **🤖 AI-Powered Chatbots:** Dedicated sections showcasing Inbound and Support AI Agents.
-- **📱 Mobile-First Design:** Every page is fully responsive and hand-crafted for the best experience on mobile devices.
-- **🎯 Industry Solutions:** Custom landing pages for E-Learning, E-Commerce, Customer Support, Healthcare, and Marketing Agencies.
-- **📈 Growth Metrics:** Interactive "Trust Metrics" with animated counters.
-- **📝 Professional Blog:** A fully functional blog system with category filtering (Product Tips, Strategy, Case Studies).
-- **🎨 Neo-Brutalist Aesthetic:** A unique design system using thick black borders, solid shadows, and high-impact brand colors.
-- **🔘 Interactive UI:** Premium hover effects, smooth transitions (Framer Motion), and custom floating widgets.
+- ** AI-Powered Chatbots:** Dedicated sections showcasing Inbound and Support AI Agents.
+- ** Mobile-First Design:** Every page is fully responsive and hand-crafted for the best experience on mobile devices.
+- ** Industry Solutions:** Custom landing pages for E-Learning, E-Commerce, Customer Support, Healthcare, and Marketing Agencies.
+- ** Growth Metrics:** Interactive "Trust Metrics" with animated counters.
+- ** Professional Blog:** A fully functional blog system with category filtering (Product Tips, Strategy, Case Studies).
+- ** Neo-Brutalist Aesthetic:** A unique design system using thick black borders, solid shadows, and high-impact brand colors.
+- ** Interactive UI:** Premium hover effects, smooth transitions (Framer Motion), and custom floating widgets.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 This project is built using the latest modern web technologies:
 
@@ -34,7 +34,7 @@ This project is built using the latest modern web technologies:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 - `src/pages`: Main pages (Home, Pricing, Blog, etc.).
 - `src/components`: Reusable UI components (Navbar, Footer, Hero sections, Feature grids).
@@ -43,7 +43,7 @@ This project is built using the latest modern web technologies:
 
 ---
 
-## 💻 How to Run Locally
+## How to Run Locally
 
 1. **Clone the repository:**
    ```bash
@@ -70,11 +70,11 @@ This project is built using the latest modern web technologies:
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 Check out the live site here: [Growbro Engage on Vercel](https://growbro-engage.vercel.app)
 
 ---
 
-## 👤 Author
+## Author
 Developed by **Simran Chaudhary**. 
 Designed to demonstrate modern frontend engineering and UI/UX skills.
